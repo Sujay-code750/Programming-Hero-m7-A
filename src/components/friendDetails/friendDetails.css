@@ -1,10 +1,10 @@
 .customGrid{
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-areas: 
     "friendDetails friendDetails days_since_contact goal next_due_date"
-    "friendDetails friendDetails Relationship_Goal Relationship_Goal Relationship_Goal"
+    "friendDetails friendDetails relationship_Goal relationship_Goal relationship_Goal"
     "buttons buttons Quick_check Quick_check Quick_check"
     ;
 }
@@ -20,8 +20,8 @@
 .next_due_date{
     grid-area: next_due_date;
 }
-.Relationship_Goal{
-    grid-area: Relationship_Goal;
+.relationship_Goal{
+    grid-area: relationship_Goal;
 }
 .buttons{
     grid-area: buttons;
@@ -29,3 +29,37 @@
 .Quick_check{
     grid-area: Quick_check;
 }
+
+
+
+           @media screen and (max-width:992px){
+            .customGrid{
+                  grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 
+            
+            "friendDetails friendDetails friendDetails"
+            "days_since_contact goal next_due_date"
+            "buttons relationship_Goal relationship_Goal"
+            "Quick_check Quick_check Quick_check"
+           
+
+            ;
+        }
+        }
+
+        @media screen and (max-width:576px){
+               .customGrid{
+                grid-template-columns: 1fr;
+            grid-template-areas: 
+            
+            "friendDetails"
+            "days_since_contact"
+            "goal"
+            "next_due_date"
+            "relationship_Goal"
+            "Quick_check"
+            "buttons"
+
+            ;
+        }
+        }

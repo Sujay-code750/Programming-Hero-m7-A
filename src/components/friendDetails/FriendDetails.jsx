@@ -52,7 +52,7 @@ const FriendDetails = () => {
 
   return (
     <div className="bg-[#f8fafc] py-20">
-      <div className="w-300 mx-auto">
+      <div className="w-full md:w-300 px-5 container mx-auto">
         <div className="customGrid">
           <div className="friendDetails">
             <div className="p-5 text-center rounded-md shadow bg-white space-y-1">
@@ -108,7 +108,7 @@ const FriendDetails = () => {
             <p className="text-lg text-[#64748b]">Days Since Contact</p>
           </div>
 
-          <div className="Relationship_Goal flex items-start justify-between rounded-sm p-5 bg-white shadow">
+          <div className="relationship_Goal flex items-start justify-between rounded-sm p-5 bg-white shadow">
             <div className="space-y-4">
               <h2 className="text-xl text-bold">Relationship Goal</h2>
               <p className="text-[#64748b] text-lg">
@@ -129,7 +129,7 @@ const FriendDetails = () => {
 
           <div className="Quick_check bg-white p-5 rounded-md shadow">
             <h3 className="text-xl font-semibold mb-2">Quick Check-In</h3>
-            <div className="grid grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               <button className="cursor-pointer bg-gray-100 flex flex-col justify-center items-center p-5 rounded-md hover:bg-gray-300 transition" onClick={handleCallFunction}>
                 <span className="text-3xl">
                   <LuPhoneCall />

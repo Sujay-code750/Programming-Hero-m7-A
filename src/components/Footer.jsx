@@ -21,8 +21,8 @@ const Footer = () => {
                 </div>
 
                </div>
-               <div className='flex items-center justify-between py-5 text-[#8fa49d]'>
-                <p>© 2026 KeenKeeper. All rights reserved.</p>
+               <div className='flex items-center justify-between py-5 text-[#8fa49d] flex-col-reverse md:flex-row'>
+                <p className='mt-5 md:mt-0'>© 2026 KeenKeeper. All rights reserved.</p>
                 <div>
                     <ul className='flex gap-5'>
                         <li><a href="#" className='hover:text-white transition'>Privacy Policy</a></li>
