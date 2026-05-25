@@ -15,7 +15,7 @@ const VideoCallFriend = ({videoCallFriend}) => {
     year: now.getFullYear(),
   };
     return (
-        <div>
+        <div className='space-y-3'>
             {
                             videoCallFriend.map((friend) =>{
                                 return (

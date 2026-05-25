@@ -15,7 +15,7 @@ const CallFriend = ({callFriend}) => {
     year: now.getFullYear(),
   };
     return (
-        <div>
+        <div className='space-y-3'>
             {
                             callFriend.map((friend) =>{
                                 return (
